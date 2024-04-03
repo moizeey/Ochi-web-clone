@@ -6,14 +6,14 @@ const LandingPage = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed="-.2"
-      className=" w-full h-screen bg-zinc-900 pt-1  font-['Founders Grotesk X-Condensed']"
+      data-scroll-speed="-.5"
+      className=" bg-zinc-900 pt-[1vw]  font-['Founders Grotesk X-Condensed']"
     >
-      <div className="textstructure mt-20 pl-20">
+      <div className="textstructure mt-[5vw] pl-[5vw]">
         {["We Create", "Eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker   ">
-              <div className="w-fit flex items-end overflow-hidden ">
+              <div className="w-fit flex flex-wrap items-end overflow-hidden ">
                 {index === 1 && (
                   <motion.div
                     initial={{ width: 0 }}
@@ -32,7 +32,7 @@ const LandingPage = () => {
 
                 <h1
                   key={index}
-                  className="text-8xl  uppercase leading-[6vw] tracking-tighter font-bold"
+                  className="text-[6vw]   uppercase leading-[6vw] tracking-tight font-bold"
                 >
                   {item}
                 </h1>
@@ -41,12 +41,12 @@ const LandingPage = () => {
           );
         })}
       </div>
-      <div className="border-t-[1px] border-zinc-700 mt-32 flex justify-between items-center py-6 px-20">
+      <div className="border-t-[1px]  border-zinc-700 mt-10 flex flex-wrap gap-6 justify-between items-start py-6 px-20">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p className="text-md tracking-tight font-light leading-none ">
+          <p className="text-md  text-wrap tracking-tight font-light leading-none ">
             {item}
           </p>
         ))}

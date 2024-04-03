@@ -2,11 +2,10 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="  w-full z-[999] py-6 px-20 flex justify-between items-center font-['Neue_Montreal'] ">
+    <div className=" z-[10]  px-[4vw] flex justify-between items-center font-['Neue_Montreal'] ">
       <div className="logo ">
         <svg
-          width="72"
-          height="30"
+          className="w-[8vw] h-[8vw]"
           viewBox="0 0 72 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +32,7 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+      <div className="links  hidden sm:max-2xl:flex gap-[3vw]">
         {[
           { link: "Home", to: "/" },
           { link: "Our work", to: "ourwork" },
@@ -44,7 +43,7 @@ const Navbar = () => {
           return (
             <li
               className={`text-sm list-none capitalize font-light cursor-pointer ${
-                index === 4 && " ml-44 "
+                index === 4 && " ml-[10vw] "
               }`}
             >
               <NavLink

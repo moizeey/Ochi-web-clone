@@ -12,7 +12,7 @@ function Featured() {
       <div className="w-full border-b-2 border-zinc-700 pt-5 pb-10"></div>
 
       <div className="px-20 pt-10 pb-20">
-        <div className="cards w-full flex gap-10 relative ">
+        <div className="cards w-full  flex-wrap flex gap-10 relative ">
           <div
             className="cardcontainer w-1/2 h-[70vh] "
             onMouseEnter={() => setHovering(true)}

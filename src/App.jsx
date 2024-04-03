@@ -8,7 +8,7 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="width-full  min-h-screen bg-zinc-900 text-white ">
+    <div className="w-full overflow-hidden  bg-zinc-900 text-white ">
       <Navbar />
       <Outlet />
       <Footer />
